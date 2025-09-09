@@ -29,6 +29,7 @@ app.get('/ufs/:iduf', (req, res) => {
 
 });  
 
+
 app.listen(8080, () => {
 let data = new Date();
 console.log('servidor iniciado na porta 8080 em: ' + data);
