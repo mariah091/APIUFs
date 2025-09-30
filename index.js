@@ -1,7 +1,14 @@
 import express from 'express';
 import { buscarUFs , buscarUfPorId , buscarUFsPorNome } from "./sevico/servico.js";
+import colecaoUf from './dados/dados.js';
 
 const app = express();
+
+
+
+app.get('/ufs',(req, res) => {
+    res.json(colecaoUf)
+})
 
 
 app.get('/ufs', (req, res) => {
